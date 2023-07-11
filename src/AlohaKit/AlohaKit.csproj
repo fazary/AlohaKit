@@ -16,10 +16,11 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <Folder Include="Platforms\Android\" />
-	  <Folder Include="Platforms\iOS\" />
-	  <Folder Include="Platforms\MacCatalyst\" />
-	  <Folder Include="Platforms\Windows\" />
+	  <Compile Remove="Platforms\**" />
+	  <EmbeddedResource Remove="Platforms\**" />
+	  <MauiCss Remove="Platforms\**" />
+	  <MauiXaml Remove="Platforms\**" />
+	  <None Remove="Platforms\**" />
 	</ItemGroup>
 
 	<ItemGroup>
